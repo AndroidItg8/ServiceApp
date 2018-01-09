@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_ticket_theater"
+        android:icon="@drawable/bg_ticket_thearder"
+        android:title="@string/ticket_theater" />
+
+    <item
+        android:id="@+id/nav_ticket_open"
+        android:icon="@drawable/bg_ticket_open"
+        android:title="@string/ticket_open" />
+
+    <item
+        android:id="@+id/nav_ticket_close"
+        android:icon="@drawable/bg_ticket_close"
+        android:title="@string/ticket_close" />
+    <item
+        android:id="@+id/nav_ticket_assign"
+        android:icon="@drawable/bg_ticket_assign"
+        android:title="@string/title_ticket_assign" />
+
+</menu>

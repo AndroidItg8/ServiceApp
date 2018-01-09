@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ll_customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:ellipsize="end"
+            android:inputType="text"
+            android:lines="2"
+            android:maxLines="2"
+            android:text="Company Name"
+            android:textColor="@color/colorGray"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/lbl_customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:ellipsize="end"
+            android:inputType="text"
+            android:lines="2"
+            android:maxLines="2"
+            android:text="CP Plus"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorGray"
+            android:layout_marginEnd="10dp"
+            android:textSize="18sp"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lbl_serviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ellipsize="end"
+            android:inputType="text"
+            android:layout_below="@+id/lbl_customer"
+            android:lines="2"
+            android:maxLines="2"
+            android:text="Service Center "
+            android:textColor="@color/colorGray"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/lbl_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ellipsize="end"
+            android:inputType="text"
+            android:layout_below="@+id/lbl_customer"
+            android:layout_alignParentEnd="true"
+            android:lines="2"
+            android:maxLines="2"
+            android:text="Technical Department"
+            android:textColor="@color/colorGray"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/lbl_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_serviceName"
+            android:layout_alignParentEnd="true"
+            android:autoLink="phone"
+            android:text="9823778532"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+        <TextView
+            android:id="@+id/lbl_numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_serviceName"
+            android:autoLink="phone"
+            android:text="Contact Number"
+            android:textColor="@color/colorGray"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/img_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:text="Email"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/lbl_number"
+            android:textColor="@color/colorGray"
+            android:textStyle="bold"
+            android:visibility="visible" />
+        <TextView
+            android:id="@+id/lbl_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:text="Email"
+            android:autoLink="email"
+            android:layout_below="@+id/lbl_number"
+            android:textColor="@color/colorBlack"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

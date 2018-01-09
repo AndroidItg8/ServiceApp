@@ -1,0 +1,43 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="itg8.com.serviceapp.login.SocialMediaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:id="@+id/ll_login"
+        android:layout_margin="20dp">
+
+        <Button
+            android:id="@+id/btn_facebook"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:drawableLeft="@drawable/facebook_back"
+            android:drawablePadding="10dp"
+            android:elevation="8dp"
+            android:text="Facebook"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/colorFacebook" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:drawableLeft="@drawable/google_back"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:elevation="8dp"
+            android:text="Google"
+            android:layout_marginStart="10dp"
+            android:id="@+id/btn_google"
+            android:textColor="@color/colorGoogle" />
+    </LinearLayout>
+
+</FrameLayout>

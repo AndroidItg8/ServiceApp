@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="6dp"
+    app:cardPreventCornerOverlap="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/itech_logo"
+        android:id="@+id/img"
+        android:layout_margin="05dp" />
+
+
+        <TextView
+            android:id="@+id/txt_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="@string/product_name"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_font" />
+
+    </LinearLayout>
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="10dp">-->
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="3">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="60dp"-->
+                <!--android:layout_margin="05dp"-->
+                <!--android:src="@drawable/itech_logo"/>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="05dp"-->
+                <!--android:layout_weight="2">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/lbl_show_case"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/showcase"-->
+                    <!--android:lines="2"-->
+                    <!--android:maxLines="2"-->
+                    <!--android:ellipsize="end"-->
+                    <!--style="@style/TextViewStyle" />-->
+                <!--<TextView-->
+                    <!--android:layout_below="@+id/lbl_show_case"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="\u20B9"-->
+                    <!--android:layout_marginTop="05dp"-->
+                    <!--android:layout_marginEnd="05dp"-->
+                    <!--android:textSize="20sp"-->
+                    <!--android:id="@+id/lbl_rupee"-->
+                    <!--style="@style/TextViewStyle" />-->
+                <!--<TextView-->
+                    <!--android:id="@+id/lbl_amt"-->
+                    <!--android:layout_below="@+id/lbl_show_case"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="2500"-->
+                    <!--android:layout_marginTop="05dp"-->
+                    <!--android:layout_toEndOf="@+id/lbl_rupee"-->
+                    <!--android:textSize="20sp"-->
+                    <!--style="@style/TextViewStyle" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/lbl_date"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/lbl_amt"-->
+                    <!--android:layout_marginTop="05dp"-->
+                    <!--android:layout_marginBottom="05dp"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_marginEnd="05dp"-->
+                    <!--style="@style/TextViewStyle"-->
+                    <!--android:text="20-07-2017"/>-->
+                <!--<TextView-->
+                    <!--android:id="@+id/lbl_mfgdate"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/lbl_amt"-->
+                    <!--android:layout_marginTop="05dp"-->
+                    <!--android:layout_marginEnd="05dp"-->
+                    <!--android:layout_marginBottom="05dp"-->
+                    <!--android:layout_toStartOf="@+id/lbl_date"-->
+                    <!--style="@style/TextViewStyleGray"-->
+                    <!--android:text="MFG Date:"/>-->
+
+
+
+
+
+            <!--</RelativeLayout>-->
+        <!--</LinearLayout>-->
+    <!--</RelativeLayout>-->
+
+</android.support.v7.widget.CardView>

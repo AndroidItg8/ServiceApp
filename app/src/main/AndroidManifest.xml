@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="itg8.com.serviceapp">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".common_method.AppApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="itg8.com.serviceapp.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ServiceDetailsActivity"
+            android:label="@string/title_activity_service_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ticket.TicketActivity"
+            android:label="@string/title_activity_ticket_raised"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".feedback.FeedbackActivity"
+            android:label="@string/title_activity_feedback"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".showcase.ShowcaseActivity"
+            android:label="@string/title_activity_showcase"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".showcase.ShowCaseDetailsActivity"
+            android:label="@string/title_activity_show_case_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".enquiry.EnquiryFormActivity"
+            android:label="@string/title_activity_enquiry_form"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".profile.ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".warranty.WarrantyActivity"
+            android:label="@string/title_activity_warranty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ticket.RaisedTicketActivity"
+            android:label="@string/title_activity_raised_ticket"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".account.AccountActivity"
+            android:label="@string/title_activity_account"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".forgetpassword.ForgetActivity"
+            android:label="@string/title_activity_forget"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".changepassword.ChangePasswordActivity"
+            android:label="@string/title_activity_change_password"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".common_method.FileDownloadService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".feedback.FeebackTicketActivity"
+            android:label="@string/title_activity_feeback_ticket"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".registration.RegistrationActivity"
+            android:label="@string/title_activity_registration"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".device.DeviceActivity"
+            android:label="@string/title_activity_device"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service android:name=".firebase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

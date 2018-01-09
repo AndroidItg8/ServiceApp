@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layout_margin="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="itg8.com.serviceapp.ticket.RaisedTicketActivity"
+    tools:showIn="@layout/activity_raised_ticket">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Product Name"
+                android:singleLine="true"
+                android:focusable="false"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!--<Spinner-->
+        <!--android:id="@+id/spinner_product"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:background="@drawable/bg_spinner"-->
+        <!--android:spinnerMode="dropdown" />-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_product">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/product"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_product">
+
+            <EditText
+                android:id="@+id/input_person_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                 android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="text"
+                android:lines="1"
+                android:layout_marginTop="10dp"
+                android:hint="Person Name"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_invoice_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_product_name">
+
+            <EditText
+                android:id="@+id/input_invoice_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/invoice"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_invoice_name"
+            android:focusable="false">
+
+            <EditText
+                android:id="@+id/input_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/purchase_date"
+                android:inputType="number"
+                android:focusable="false"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_deal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_date"
+            android:focusable="false">
+
+            <EditText
+                android:id="@+id/input_deal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+
+                android:layout_marginTop="10dp"
+                android:hint="@string/deal"
+                android:maxLines="3"
+                android:lines="3"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Spinner
+            android:id="@+id/spinner_problem"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/input_layout_deal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_spinner"
+            android:spinnerMode="dropdown" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_problem"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/input_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/other_problem"
+                android:lines="3"
+                android:maxLines="3"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_other"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Submit"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorTransparent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_gravity="center">
+
+        <com.github.rahatarmanahmed.cpv.CircularProgressView
+            android:id="@+id/progressView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:cpv_color="@color/colorPrimary"
+            app:cpv_thickness="2dp"
+            android:layout_gravity="center"
+            app:cpv_indeterminate="true"
+            app:cpv_animAutostart="true"/>
+    </LinearLayout>
+    </FrameLayout>
+
+
+
+
+</ScrollView>

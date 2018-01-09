@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="itg8.com.serviceapp.showcase.ShowcaseActivity"
+    tools:showIn="@layout/activity_showcase">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvCatProductList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+      <itg8.com.serviceapp.widget.AutoScrollViewPager
+          android:layout_width="match_parent"
+          android:layout_height="200dp"
+          android:layout_marginBottom="10dp"
+          android:layout_marginTop="5dp"
+          android:id="@+id/viewPager"/>
+
+
+    </LinearLayout>
+        <com.github.rahatarmanahmed.cpv.CircularProgressView
+            android:id="@+id/progressView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:cpv_color="@color/colorPrimary"
+            app:cpv_thickness="2dp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            app:cpv_indeterminate="true"
+            app:cpv_animAutostart="true"/>
+    </FrameLayout>
+</ScrollView>

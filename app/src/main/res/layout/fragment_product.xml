@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_search"
+        android:layout_marginBottom="4dp"
+        android:hint="Search here"
+        android:visibility="gone"
+        android:paddingLeft="05dp"
+        android:paddingRight="05dp"/>
+    <RelativeLayout
+        android:id="@+id/rel_layout"
+        android:layout_below="@id/edt_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lnear_layout"
+            android:id="@+id/recyclerViewProduct">
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/lnear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="05dp">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:text="cancel"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/btn_cancel"
+                android:layout_weight="1"
+                android:layout_margin="05dp"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:text="ok"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                android:layout_weight="1"
+                android:id="@+id/btn_ok"
+                android:layout_margin="05dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
